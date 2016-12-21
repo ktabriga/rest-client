@@ -22,8 +22,8 @@ function getHeaders(headers = {}) {
     return headers;
   }
   return {
-    ...headers,
     ...globalHeaders,
+    ...headers,
     [authHeader]: token
   };
 }
